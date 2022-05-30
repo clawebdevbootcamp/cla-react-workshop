@@ -1,7 +1,7 @@
 import { createSlice} from '@reduxjs/toolkit'
 
 const initialState={
-    todosList: JSON.parse(localStorage.getItem("todos"))
+    todosList: JSON.parse(localStorage.getItem("todos")) ||[]
     // [
     //     {
     //         name:"Buy groceries for next week",
